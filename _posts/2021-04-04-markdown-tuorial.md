@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tutorial markdown
+math: True
 ---
 
 # Welcome to StackEdit!
