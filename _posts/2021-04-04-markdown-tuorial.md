@@ -2,6 +2,7 @@
 layout: post
 title: Tutorial markdown
 math: 1
+description: This is a description for markdown tutorial
 ---
 
 # Welcome to StackEdit!
