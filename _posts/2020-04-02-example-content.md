@@ -36,40 +36,110 @@ Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est 
 
 Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
 
-{% highlight js %}
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-{% endhighlight %}
-
-```javascript
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
 
 {% highlight py %}
+from django.db import models
+from django.contrib.auth import get_user_model
+from django.urls import reverse
+from django.db import models
+# from tinymce.models import HTMLField
+# from ckeditor.fields import RichTextField
+# from ckeditor_uploader.fields import RichTextUploadingField
 
-a = 10
-b = c
+User = get_user_model()
 
-def calculator(a,b):
-    return a * b
-    
-for i in listadepa:
-    print(i)
-    
+
+# Create your models here.
+class Author(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    profile_picture = models.ImageField()
+
+    def __str__(self):
+        return self.user.username
+
+
+class Category(models.Model):
+    title = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.title + ',' + str(self.id)
+
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    overview = models.TextField()
+    timestamp = models.DateTimeField()
+    # content = HTMLField('Content')
+    # content = RichTextField(blank=True, null=True)
+    # content = RichTextUploadingField(blank=True, null=True)
+    content = models.TextField()
+    min_read = models.IntegerField(default=0)
+    view_count = models.IntegerField(default=0)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    thumbnail = models.ImageField()
+    categories = models.ManyToManyField(Category)
+    featured = models.BooleanField()
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
 {% endhighlight %}
+
+```python
+from django.db import models
+from django.contrib.auth import get_user_model
+from django.urls import reverse
+from django.db import models
+# from tinymce.models import HTMLField
+# from ckeditor.fields import RichTextField
+# from ckeditor_uploader.fields import RichTextUploadingField
+
+User = get_user_model()
+
+
+# Create your models here.
+class Author(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    profile_picture = models.ImageField()
+
+    def __str__(self):
+        return self.user.username
+
+
+class Category(models.Model):
+    title = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.title + ',' + str(self.id)
+
+
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    overview = models.TextField()
+    timestamp = models.DateTimeField()
+    # content = HTMLField('Content')
+    # content = RichTextField(blank=True, null=True)
+    # content = RichTextUploadingField(blank=True, null=True)
+    content = models.TextField()
+    min_read = models.IntegerField(default=0)
+    view_count = models.IntegerField(default=0)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    thumbnail = models.ImageField()
+    categories = models.ManyToManyField(Category)
+    featured = models.BooleanField()
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+```
+
+
+
+
+
+
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
