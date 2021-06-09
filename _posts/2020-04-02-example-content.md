@@ -47,6 +47,30 @@ adder(2, 6);
 // > 8
 {% endhighlight %}
 
+```javascript
+// Example can be run directly in your JavaScript console
+
+// Create a function that takes two arguments and returns the sum of those arguments
+var adder = new Function("a", "b", "return a + b");
+
+// Call the function
+adder(2, 6);
+// > 8
+```
+
+{% highlight py %}
+
+a = 10
+b = c
+
+def calculator(a,b):
+    return a * b
+    
+for i in listadepa:
+    print(i)
+    
+{% endhighlight %}
+
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
 ### Gists via GitHub Pages
