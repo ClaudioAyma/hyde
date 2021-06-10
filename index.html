@@ -12,11 +12,11 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-    <span class="post-date">{{ post.categories}}</span>
+    <span class="post-date">{{ post.date | date_to_string }} |
      {% for cat in post.categories %}
-      <span class="post-date">{{ cat }}</span>
+      <i>•{{ cat }}</i>
      {% endfor %}
+    </span>
 <!--     {{ post.description }} -->
     {{post.content}}
   </div>
