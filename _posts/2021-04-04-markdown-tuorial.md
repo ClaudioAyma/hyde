@@ -3,6 +3,7 @@ layout: post
 title: Tutorial markdown
 math: 1
 description: This is a description for markdown tutorial
+uml: 1
 ---
 
 # Welcome to StackEdit!
