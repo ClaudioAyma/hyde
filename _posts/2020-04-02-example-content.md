@@ -2,6 +2,7 @@
 layout: post
 title: Example content
 description: this example content  blog post that shows several types of HTML
+categories: [Python]
 ---
 
 
