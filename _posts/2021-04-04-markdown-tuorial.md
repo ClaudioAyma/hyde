@@ -4,6 +4,7 @@ title: Tutorial markdown
 math: 1
 description: This is a description for markdown tutorial
 uml: 1
+categories: [Python, Statistic, Markdown]
 ---
 
 # Welcome to StackEdit!
