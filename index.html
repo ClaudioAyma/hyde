@@ -13,7 +13,10 @@ title: Home
     </h1>
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
+    <span class="post-date">{{ post.categories}}</span>
+     {% for cat in post.categories %}
+      <span class="post-date">{{ cat }}</span>
+     {% endfor %}
 <!--     {{ post.description }} -->
     {{post.content}}
   </div>
