@@ -1,7 +1,7 @@
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            Data Science Blog
+tagline:          'Claudio'
+description:      'Hello! My name is <a href="https://cclaudio.dev/">Claudio</a> and this is my website where I share ideas, projects and concepts related to data science.'
 url:              https://cclaudio.dev
 baseurl:          '/'
 paginate:         5
