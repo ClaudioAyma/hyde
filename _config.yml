@@ -1,7 +1,7 @@
 # Setup
 title:            Data Science Blog
 tagline:          'Claudio'
-description:      'Hi! I'm <a href="https://cclaudio.dev/about">Claudio</a> and this is my website about DS.'
+description:      'Hi! I am <a href="https://cclaudio.dev/about">Claudio</a> and this is my website about DS'
 url:              https://cclaudio.dev
 baseurl:          '/'
 paginate:         5
