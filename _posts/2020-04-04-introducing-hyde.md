@@ -2,6 +2,7 @@
 layout: post
 title: Introducing Hyde
 description: In this post you will how works hyde theme
+background: '/img/4.jpg'
 categories: [Python, Markdown]
 ---
 
