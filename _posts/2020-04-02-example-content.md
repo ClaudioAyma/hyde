@@ -3,7 +3,7 @@ layout: post
 title: Example content
 description: this example content  blog post that shows several types of HTML
 background: '/img/3.jpg'
-categories: [Python]
+tags: [python]
 ---
 
 
