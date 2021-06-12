@@ -3,6 +3,7 @@ layout: post
 title: What's Jekyll?
 description: It's an immensely useful tool and one we encourage you to use here with Hyde.
 background: '/img/2.jpg'
+tags: ["python", "statistic"]
 ---
 
 [Jekyll](https://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
