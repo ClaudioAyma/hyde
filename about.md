@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+permalink: /about/
 ---
 
 > ❝As data scientists, our job is to extract signal from noise❞
