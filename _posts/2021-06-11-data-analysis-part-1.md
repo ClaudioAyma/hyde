@@ -816,7 +816,7 @@ df['horsepower']
 
 
 
-2)```dataframe.column_name```:
+2) ```dataframe.column_name```:
 
 
 ```python
