@@ -5,7 +5,7 @@ description: "This is the first part of Data Analysis course where you will lear
 categories2: [Python]
 ---
 
-![pic](img/data-analysis/data-analysis-part-1.webp)
+![pic](/img/data-analysis/data-analysis-part-1.webp)
 
 The main tool used to perform data analysis with python is ```Jupyter Notebook``` this is an environment to document our analysis with markdown and execute python code in cells that returns a rendered html output that will be very useful for displaying images, tables, text and much more.
 
@@ -61,7 +61,7 @@ To use this tool it is necesary to install [Anaconda](https://www.anaconda.com/p
 
 Various formats for a datasets like ```.csv```, ```.json```, ```.xlsx```, ```.sql```  are most common to store structured data and it will be used in this post to perform data analysis.
 
-The dataset used in this post and next chapters will be this [automobile.csv](img/data-analysis/data/automobile.csv) (click on it  to download it)
+The dataset used in this post and next chapters will be this [automobile.csv](/img/data-analysis/data/automobile.csv) (click on it  to download it)
 
 This dataset contain information of prices, maker, number of doors, fuel type, etc about automibles and also has missing values, this will be useful to perform data cleaning.
 
