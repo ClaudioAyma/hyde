@@ -2,7 +2,14 @@
 layout: default
 title: Home
 ---
-
+{% for tag in site.tags %}
+  <h3>{{ tag[0] }}</h3>
+  <ul>
+    {% for post in tag[1] %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
 <div class="posts">
   {% for post in paginator.posts %}
     <article class="page post mb6" role="article">
@@ -12,7 +19,7 @@ title: Home
             </h2>
             <div class="post-date">
                 <span class="post-date">{{ post.date | date_to_string }} |
-                    {% for cat in post.categories2 %}
+                    {% for cat in post.tags %}
                      <i>•{{ cat }}</i>
                     {% endfor %}
                 </span>
