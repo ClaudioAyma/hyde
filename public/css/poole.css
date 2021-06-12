@@ -378,6 +378,10 @@ tbody tr:nth-child(odd) th {
 .related-posts li a:hover small {
   color: inherit;
 }
+/* adding this manually because tables was not overflowed */
+div  table {
+   overflow: auto;
+}
 
 
 /*
