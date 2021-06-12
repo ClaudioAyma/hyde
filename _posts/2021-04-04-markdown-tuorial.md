@@ -5,8 +5,7 @@ math: 1
 description: This is a description for markdown tutorial
 uml: 1
 background: '/img/1.png'
-categories: [Python, Statistic, Markdown]
-categories2: [Python3, Statistic3, Markdown3]
+tags: ["python", "statistic", "markdown"]
 ---
 
 # Welcome to StackEdit!
