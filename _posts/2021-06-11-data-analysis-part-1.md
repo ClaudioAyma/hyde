@@ -791,7 +791,7 @@ To see an individual column of a dataframe there two ways ```dataframe['column_n
 
 For example if we want to see information about ```horsepower``` featured of the dataframe.
 
-```dataframe['column_name']``` :
+1) ```dataframe['column_name']``` :
 
 
 ```python
@@ -816,7 +816,7 @@ df['horsepower']
 
 
 
-```dataframe.column_name```
+2)```dataframe.column_name```:
 
 
 ```python
