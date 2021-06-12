@@ -123,7 +123,7 @@ df.head(5)
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -302,7 +302,7 @@ df.tail(5)
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -496,7 +496,7 @@ df.head(10)
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -870,7 +870,7 @@ df.dropna(subset=["price"], axis=0)
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1282,7 +1282,7 @@ df.describe()
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1440,7 +1440,7 @@ df.describe(include = "all")
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1769,7 +1769,7 @@ df[['length', 'compression-ratio']].describe()
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
