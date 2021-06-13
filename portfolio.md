@@ -4,15 +4,7 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+## Predicting employee turnover
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
-
-There are currently two themes built on Poole:
-
-* [Hyde](https://hyde.getpoole.com)
-* [Lanyon](https://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
+A Jupyter notebook project using Data Science pipeline OSEMN to perform a deep analysis and modeling to employe turnover dataset 
+<a href="https://nbviewer.jupyter.org/github/ClaudioAyma/OSEMN/blob/master/OSEM.ipynb" target="_blank">Project</a>
