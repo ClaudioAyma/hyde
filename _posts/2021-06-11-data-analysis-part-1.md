@@ -2,7 +2,7 @@
 layout: post
 title: Data Analysis with Python (Part 1)
 description: "This is the first part of Data Analysis course where you will learn basic things about tools that we will use for future posts like Pandas and Jupyter Notebook"
-tags: ["python"]
+tags: ["Python"]
 ---
 
 ![pic](/img/data-analysis/data-analysis-part-1.webp)
