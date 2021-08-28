@@ -23,3 +23,6 @@ The objective of this blog is to share content related to:
 * Deep Learning.
 * Web Scraping.
 
+# Contact
+
+claudio.dev96@gmail.com
