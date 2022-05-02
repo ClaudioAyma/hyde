@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: Report Sales Videogames
-permalink: /report-videogames-sales/
+title: Videogames Sales Report
+permalink: /portfolio-videogames-sales-report/
 ---
 
-<iframe title="Proyecto 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZmEwMDdkYmMtMDg5Yi00ZjNjLTg2NzQtYjA5NTdiNmY0MTI5IiwidCI6IjQxMDMwMjJiLWVhMjQtNDJhZS05NmUyLTg3OGMyY2Y5NGZiYSJ9&pageName=ReportSection" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="Proyecto 1 - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiOTQyNzVhODgtYzMxNy00MWFmLWJhNGItMWRmYTE4OTgwMTAzIiwidCI6IjQxMDMwMjJiLWVhMjQtNDJhZS05NmUyLTg3OGMyY2Y5NGZiYSJ9" frameborder="0" allowFullScreen="true"></iframe>
