@@ -13,8 +13,6 @@ permalink: /portfolio/
     <li>
     <h2 id="videogames-sales-report">Videogames Sales Report</h2>
 <p>A Power BI project that shows information about Videogames industry related to sales history.
-<a href="" target="_blank">Project</a></p>
-        <h3>-1 {{absolute_url }}</h3>
-        <h3>-2 {{ site.url }}</h3>
+<a href="{{ site.url }}/portfolio-videogames-sales-report/">Project</a></p>
     </li>
 </ul>
