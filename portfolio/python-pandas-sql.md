@@ -1,8 +1,9 @@
 ---
 layout: portfolio
-title: SQL Analysis
+title: SQL Data Exploration - COVID19
 permalink: /python-pandas-sql-analysis/
 ---
+
 ### Import Libraries
 
 
@@ -58,7 +59,7 @@ df.head()
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -251,7 +252,7 @@ df.head()
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -425,9 +426,17 @@ df.head()
 
 ```python
 query = """
-SELECT location, date, total_cases, new_cases, total_deaths, population
-FROM covid_deaths
-WHERE continent IS NOT NULL 
+SELECT
+    location,
+    date,
+    total_cases,
+    new_cases,
+    total_deaths,
+    population
+FROM
+    covid_deaths
+WHERE
+    continent IS NOT NULL 
 ORDER BY 1,2
 """
 df = pd.read_sql_query(query, con=engine)
@@ -437,7 +446,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -590,7 +599,9 @@ AS (
 	GROUP BY continent
 	ORDER BY continent DESC
 )
-SELECT *, ROUND(("Total Cases"/"Population") * 100, 2) AS "Infected Population"
+SELECT
+    *,
+    ROUND(("Total Cases"/"Population") * 100, 2) AS "Infected Population"
 FROM CONTINENT_CASES
 ORDER BY "Infected Population" DESC
 ```
@@ -613,7 +624,9 @@ AS (
 	GROUP BY continent
 	ORDER BY continent DESC
 )
-SELECT *, ROUND(("Total Cases"/"Population") * 100, 2) AS "Infected Population"
+SELECT
+    *,
+    ROUND(("Total Cases"/"Population") * 100, 2) AS "Infected Population"
 FROM CONTINENT_CASES
 ORDER BY "Infected Population" DESC
 """
@@ -624,7 +637,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -705,9 +718,12 @@ SELECT
 	DISTINCT location AS "Country",
 	total_cases AS "Total Cases",
 	population AS "Population",
-	ROUND((total_cases/ population) * 100, 2) AS "Infected Population"
+	ROUND((total_cases/ population) *100, 2) AS "Infected Population"
 FROM covid_deaths
-WHERE date = '2022-05-05' AND population IS NOT NULL AND total_cases IS NOT NULL 
+WHERE
+    date = (SELECT MAX(DATE) FROM COVID_DEATHS) AND
+    population IS NOT NULL AND
+    total_cases IS NOT NULL 
 ORDER BY "Infected Population" DESC
 ```
 
@@ -715,12 +731,15 @@ ORDER BY "Infected Population" DESC
 ```python
 query = """
 SELECT
-    DISTINCT location AS "Country",
-    total_cases AS "Total Cases",
-    population AS "Population",
-    ROUND((total_cases/ population) * 100, 2) AS "Infected Population"
+	DISTINCT location AS "Country",
+	total_cases AS "Total Cases",
+	population AS "Population",
+	ROUND((total_cases/ population) *100, 2) AS "Infected Population"
 FROM covid_deaths
-WHERE date = '2022-05-05' AND population IS NOT NULL AND total_cases IS NOT NULL 
+WHERE
+    date = (SELECT MAX(DATE) FROM COVID_DEATHS) AND
+    population IS NOT NULL AND
+    total_cases IS NOT NULL 
 ORDER BY "Infected Population" DESC
 """
 df = pd.read_sql_query(query, con=engine)
@@ -730,7 +749,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -890,7 +909,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1007,7 +1026,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1152,7 +1171,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1240,18 +1259,28 @@ df
 ### GLOBAL NUMBERS 
 
 ```sql
-SELECT SUM(new_cases) AS "Total Cases", SUM(CAST(new_deaths AS int)) AS "Total Deaths", SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 as "Death Percentage"
-FROM covid_deaths
-WHERE continent IS NOT NULL
+SELECT
+    SUM(new_cases) AS "Total Cases",
+    SUM(CAST(new_deaths AS int)) AS "Total Deaths",
+    SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 as "Death Percentage"
+FROM
+    covid_deaths
+WHERE
+    continent IS NOT NULL
 ORDER BY 1,2
 ```
 
 
 ```python
 query = """
-SELECT SUM(new_cases) AS "Total Cases", SUM(CAST(new_deaths AS int)) AS "Total Deaths", SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 as "Death Percentage"
-FROM covid_deaths
-WHERE continent IS NOT NULL
+SELECT
+    SUM(new_cases) AS "Total Cases",
+    SUM(CAST(new_deaths AS int)) AS "Total Deaths",
+    SUM(CAST(new_deaths AS int))/SUM(New_Cases)*100 as "Death Percentage"
+FROM
+    covid_deaths
+WHERE
+    continent IS NOT NULL
 ORDER BY 1,2
 """
 df = pd.read_sql_query(query, con=engine)
@@ -1261,7 +1290,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -1369,7 +1398,7 @@ df
 
 
 
-<div>
+<div style="overflow: auto;">
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
