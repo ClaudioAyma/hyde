@@ -15,4 +15,9 @@ permalink: /portfolio/
 <p>A Power BI project that shows information about Videogames industry related to sales history.
 <a href="{{ site.url }}/portfolio-videogames-sales-report/">Project</a></p>
     </li>
+    <li>
+    <h2 id="python-pandas-sql-analysis">SQL Data Exploration - COVID19</h2>
+<p>A Jupyter notebook project that shows information about covid situation around the world.
+<a href="{{ site.url }}/python-pandas-sql-analysis/">Project</a></p>
+    </li>
 </ul>
